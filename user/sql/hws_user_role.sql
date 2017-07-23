@@ -1,0 +1,2 @@
+INSERT INTO hws_user.role (description, role_name, role_signal) VALUES ('测试插入数据:2017-07-16T10:16:58.293', '管理员', 'admin');
+INSERT INTO hws_user.role (description, role_name, role_signal) VALUES ('测试插入数据:2017-07-16T10:16:58.301', '普通用户', 'user1');

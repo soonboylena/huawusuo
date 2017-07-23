@@ -1,0 +1,1 @@
+INSERT INTO hws_user.user_permissions (user_id, permission_id) VALUES (3, 4);

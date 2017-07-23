@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "gateway.scheme",
+      "type": "java.lang.String",
+      "description": "Description for gateway.scheme."
+    },
+    {
+      "name": "gateway.host",
+      "type": "java.lang.String",
+      "description": "Description for gateway.host."
+    },
+    {
+      "name": "userService.key",
+      "type": "java.lang.String",
+      "description": "Description for userService.key."
+    }
+  ]
+}

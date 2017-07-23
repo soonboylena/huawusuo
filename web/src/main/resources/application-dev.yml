@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: web
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+server:
+  port: 8070
+logging:
+  level: debug
+userService:
+  key: user
+
+gateway:
+  scheme: http
+  host: 127.0.0.1
+  port: 5000
+
+
