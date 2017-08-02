@@ -1,34 +1,18 @@
-spring:
-  profiles:
-    active: dev
-  application:
-    name: workflow
-
-
 server:
   port: 5602
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:5500/eureka/
-
 spring:
+  profiles:
+    active: dev
+  application:
+    name: workflow
   datasource:
-    url: jdbc:mysql://localhost:3306/hws_user?characterEncoding: utf8&useSSL: false
-spring:
-  jpa:
-    show-sql: true
-    generate-ddl: true
-    properties:
-      hibernate:
-        hbm2ddl:
-          auto: update
-  datasource:
+    url: jdbc:mysql://localhost:3306/hws_workflow?characterEncoding:utf8&useSSL:false
     username: root
     password: sunbo
-
-spring:
-  datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
     minIdle: 5
@@ -50,5 +34,13 @@ spring:
     filters: stat,wall,log4j
 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
 # 合并多个DruidDataSource的监控数据
 #spring.datasource.useGlobalDataSourceStat: true
+
